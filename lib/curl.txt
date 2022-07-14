@@ -1,0 +1,52 @@
+===================================================================================================
+http://31.216.62.79:6060/www/trainer.html
+https://b2n.ir/t50219
+
+
+http://31.216.62.79:6060/www/user.html
+https://b2n.ir/s69027
+
+https://yun.ir/
+===================================================================================================
+fake_login:
+
+curl -X POST -d "{\"user_id\":102, \"request\":\"fake_login\"}" ^
+    -H Connection:close ^
+    -H Content-Type:application/json ^
+     http://192.168.1.103:6060/management
+===================================================================================================
+Niko:
+ 
+curl -X POST http://nikotest.nicode.org/v1/signin ^
+  -H accept:text/plain  ^
+  -H Content-Type:application/json  ^
+  -d "{\"phoneNumber\": \"09139277303\"}"
+===================================================================================================
+is_ws_online:
+
+curl -X POST -d "{\"user_id\":102, \"request\":\"is_ws_online\"}" ^
+    -H Connection:close ^
+    -H Content-Type:application/json ^
+     http://192.168.1.103:6060/management
+===================================================================================================
+fake_user_notifier:
+
+curl -X POST -d "{\"user_id\":100, \"id\":126, \"request\":\"fake_user_notifier\"}" ^
+    -H Connection:close ^
+    -H Content-Type:application/json ^
+     http://31.216.62.79:6060/management
+===================================================================================================
+fake_trainer_notifier:
+
+curl -X POST -d "{\"user_id\":102, \"trainer_id\":100, \"course_id\":99, \"request\":\"fake_trainer_notifier\"}" ^
+    -H Connection:close ^
+    -H Content-Type:application/json ^
+     http://192.168.1.103:6060/management
+===================================================================================================
+
+curl -X POST -d "{"AppVersion":'92899', "request":"GetSystemInfo"}" ^
+    -H Connection:close ^
+    -H Content-Type:application/json ^
+     http://192.168.1.103:6060/management?MKey=mm0ss0g89gfdy
+
+===================================================================================================

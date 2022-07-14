@@ -1,0 +1,35 @@
+
+
+--------------------------------------------------------------------------------------------
+*UserPersonalData
+    |
+    - UserId  int
+    |
+    -SportsEquipmentJs {}
+        -HomeTools txt
+        -GymTools txt
+    |
+    -HealthConditionJs {}
+        -IllList     []
+        -Description txt
+        -Medications txt
+    |
+    -JobActivityJs {}
+        -JobType     txt
+        -NonWorkActivity txt
+        -SleepHoursAtDay int
+        -SleepHoursAtNight int
+        -ExerciseHours int
+        -GoalOfFitness txt
+
+--------------------------------------------------------------------------------------------
+*UserFitnessData
+    |
+    -UserId  int
+    |
+    -Nodes js
+        |
+        -HeightNode []
+        |
+        -WeightNode []
+--------------------------------------------------------------------------------------------

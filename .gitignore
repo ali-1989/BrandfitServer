@@ -1,0 +1,21 @@
+# Files and directories created by pub
+.dart_tool/
+pubspec.lock
+.packages
+
+
+
+
+
+
+# Conventional directory for build outputs
+build/
+ChatFiles/
+Logs/
+Temp/
+Backups/
+UploadedFiles/
+Apps/
+
+# Directory created by dartdoc
+doc/api/
