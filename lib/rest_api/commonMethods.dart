@@ -496,10 +496,10 @@ class CommonMethods {
       where = ' id = $msgId AND sender_user_id = $userId ';
     }
 
-    final cursor = await PublicAccess.psql2.delete(DbNames.T_TicketMessage, where, returning: 'media_id');
+    final cursor = await PublicAccess.psql2.deleteReturning(DbNames.T_TicketMessage, where, returning: 'media_id');
 
-    if(cursor is String || cursor is int){
-      return deleteMediaMessage(userId, cursor);
+    if(cursor != null){
+      return deleteMediaMessage(userId, cursor[0].toList()[0]);
     }
 
     return null;
